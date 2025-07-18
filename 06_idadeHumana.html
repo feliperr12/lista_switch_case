@@ -10,11 +10,28 @@
     */
 
     // ENTRADA
-
+const idade = Number(prompt("qual a idade do seu cao"));
+const porte = prompt("qual o porte do seu cachorro");
     
     // PROCESSAMENTO
-
+  let fator;
+    switch (porte) {
+        case "pequeno":
+            fator = 5;
+            break;
+        case "médio":
+            fator = 6;
+            break;
+        case "grande":
+            fator = 7;
+            break;
+        default:
+            alert("Porte inválido!");
+            fator = 0;
+    }
+   const idadeHumana = idade * fator;
     
     // SAÍDA
+    alert(`a idade do seu cao em idade humana é de ${idadeHumana}`)
 
 </script>

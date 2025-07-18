@@ -9,11 +9,65 @@
     */
 
     //ENTRADA
-
+    const numero1 = Number(prompt("informe o primeiro numero"))
+    const numero2 = Number(prompt("informe o segundo numero"))
+    const operaçao = prompt("informe qual operaçao voce deseja fazer +,-,*,/")
 
     //PROCESSAMENTO
+    switch (operaçao) {
+        case "+":
+            alert(`resultado: ${numero1 + numero2}`)
+            break;
+        case "-":
+            alert(`resultado: ${numero1 - numero2}`)
+            break
+        case "*":
+            alert(`resultado: ${numero1 * numero2}`)
+            break
+        case "/":
+            alert(`resultado: ${numero1 / numero2}`)
 
-    
+        default:
+            alert("numero invalido")
+            break;
+    }
+
+    let conta = numero1 + numero2
+
+    switch (conta % 2) {
+        case 0:
+        case 2:
+        case 4:
+        case 6:
+        case 8:
+            alert("seu numero é par")
+            break;
+
+        default:
+            alert("seu numero é impar")
+            break;
+    }
+
+    switch (true) {
+        case conta > 0:
+            alert("seu numero é positivo")
+            break;
+
+        default:
+            alert("seu numero é negativo")
+            break;
+    }
+
+    switch (conta % 1 === 0) {
+        case true:
+            alert("inteiro")
+            break;
+
+        default:
+            alert("decimal")
+            break;
+    }
+
     //SAÍDA
 
 </script>
